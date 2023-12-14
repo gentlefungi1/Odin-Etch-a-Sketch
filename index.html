@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="./sketch.css">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="title">
+                <h1>Etch-a-Sketch</h1>
+            </div>
+            <div class="inner-div">
+                <div class="title-2">
+                    <p class="ptag">Change the grid size!</p>
+                    <input class="slider" id="slider" type="range" min="10" max="100" value="16"/>
+                    <p class="slider-value" id="slider-value"></p>
+                </div>
+                <div>
+                    <div class="title-3">
+                        <p class="ptag">Color Mode</p>
+                    </div>
+                    <div>
+                        <button id="random" onclick="setColor('random')">RGB Colors</button>
+                        <button id="black" onclick="setColor('black')">Black & White</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-container"></div>
+        <div id="reset">
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <script src="./sketch.js"></script>
+</body>
+</html>
